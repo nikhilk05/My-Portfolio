@@ -1,0 +1,282 @@
+.about-me{
+    position: relative;
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 720px;
+}
+
+
+.about-me__block{
+    height: 745px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    background-color: black;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+
+.about-me img{
+    height: 400px;
+    width: 405px;
+    position: relative;
+    right: 50px;
+}
+
+
+.about-me__content {
+    display: flex;
+    position: relative;
+    gap: 1rem;
+    flex: .95;
+    top: 25px;
+    flex-direction: column;
+    letter-spacing: 1px;
+}
+
+strong{
+    color: var(--main-color);
+}
+
+
+.about-me__title{
+    position: relative;
+    top: 4px;
+    gap: 12px;
+    display: flex;
+    font-size: 80px;
+    margin-left: 200px;
+    color: var(--main-color);
+}
+
+
+.about-me__title div{
+ color: var(--secondary-color);
+}
+
+
+.about-me__subtitle{
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+
+.about-me__description{
+    font-weight: 600;
+    width: 100%;
+    padding-left: 200px;
+    line-height: 30px;
+    position: relative;
+}
+
+
+
+@media only screen and (max-width:1496px) {
+
+    .about-me__block {
+        height: 655px;
+        width: 50%;
+    }
+
+
+    .about-me__content {
+        flex: 1;
+    } 
+}
+
+@media only screen and (max-width:1440px) {
+
+    .about-me img{
+        height: 350px;
+        width: 355px;
+    }    
+} 
+
+
+@media only screen and (max-width:1024px) {
+
+    .about-me__content {
+        flex: .89;
+        left: -1px;
+    }
+
+
+    .about-me__title{
+        font-size: 66px;
+        margin-left: 135px;
+    }
+
+
+    .about-me__description {
+        width: 95%;
+        padding-left: 135px;
+        font-size: 15px;
+    }
+    
+    
+    strong {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    .about-me{
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 7rem;
+        height: 145vh;
+        margin-top: 3rem;
+    }
+    
+    
+    
+    .about-me__block{
+        width: 70%;        
+    }
+
+
+    .about-me__content {
+        flex: .4;
+        align-items: center;
+    }
+
+
+    .about-me__title {
+        font-size: 80px;
+        margin-left: 0;
+    }
+
+
+    .about-me__description{
+        font-size: 16px;
+        width: 80%;
+        padding: 0;
+    }
+
+
+    strong {
+        font-size: 17px;
+    }    
+}
+
+
+@media only screen and (max-width:426px) {
+
+    .about-me {
+        margin-top: 1rem;
+        gap: 0rem;
+    }
+
+
+    .about-me__content {
+        flex: .38;
+    }    
+    
+    
+    .about-me__title {
+        font-size: 65px;
+    }
+    
+    
+    .about-me__description {
+        font-size: 14px;
+        width: 100%;
+        padding: 0px 23px;
+        text-align: center;
+    }
+
+
+    .about-me__description strong {
+        font-size: 15px;
+    }
+
+
+    .about-me__block {
+        width: 90%;
+        flex: .535;
+    }
+
+
+    .about-me img {
+        height: 300px;
+        width: 305px;
+        right: 20px;
+    }
+}
+
+
+@media only screen and (max-width:376px) {
+
+    .about-me {
+        margin-top: 3rem;
+        gap: 2rem;
+    }
+
+
+    .about-me__title {
+        font-size: 55px;
+    }
+
+
+    .about-me__block {
+       width: 95%;
+    }
+
+
+    .about-me img {
+        height: 280px;
+        width: 285px;
+        right: 15px;
+    }
+
+
+    .about-me__description strong {
+        font-size: 14.5px;
+    }
+    
+    
+    .about-me__description {
+        width: 100%;
+        padding: 0px 11px;
+    } 
+  
+}
+
+
+@media only screen and (max-width:321px) {
+
+    .about-me{
+        margin-top: 0rem;
+        gap: 8rem;
+    }
+
+
+    .about-me__title {
+        font-size: 45px;
+    }
+
+  
+    .about-me__description {
+        width: 100%;
+        padding: 0px 26px;
+    }
+
+
+    .about-me__block {
+        width: 100%;
+        flex: .515;
+    }
+
+
+    .about-me__block img{
+        height: 260px;
+        width: 265px;
+    }
+} 

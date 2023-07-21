@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" href="/assets/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+  </head>
+ <body>
+    <header>
+      <nav class="header__nav">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="/assets/logo.png" alt=""/>
+          </a> 
+          <div class="header__menu">
+            <ul>
+              <li><a  href="#Home">Home</a></li> 
+              <li><a  href="#About">About me</a></li>
+              <li><a  href="#Skills">Skills</a></li>
+              <li><a  href="#Projects">Projects</a></li>
+              <a href="#Hireme">
+                <button type="button" class="header__nav__btn-hire">Hire me
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                </button>
+              </a>
+            </ul>
+          </div>  
+        </div>
+        <div class="header__nav__buttons">
+          <div class="header__button-mobile">
+            <i class="fa-solid fa-bars-staggered fa-flip-horizontal"></i>
+          </div>
+          <a href="#Hireme">
+            <button type="button" class="header__nav__button-hireme">Hire me
+              <i class="fa-sharp fa-solid fa-circle-check">
+              </i>
+            </button>
+          </a>
+        </div>       
+      </nav>
+    </header>  
+
+    <section class="hero" id="Home">
+      <div class="hero-block">
+        <img src="/assets/self-1.jpg" alt="self" data-aos="fade-left"/>
+        <div class="hero-image__overlay">
+        </div>
+      </div>   
+      <div class="hero-content">
+        <div class="hero-content__info">
+          <h3 class="hero-content__intro">Hello,
+            <span> 
+              my name is
+            </span>
+          </h3>
+          <h1 class="hero-content__name">Nikhil
+            <div>
+              K
+            </div>
+          </h1>
+          <h4 class="hero-content__role">
+            <span>
+              I am a
+            </span>Web Developer
+          </h4> 
+          <div class="hero-content__button"> 
+            <a href="/resume/CV-Nikhilk.pdf">
+              <button  type="button" class="hero-content__button-resume">Download Resume
+                <i class="fa-sharp fa-solid fa-circle-down"></i>
+              </button>
+            </a>
+          </div>  
+          <div class="hero-content__social-media">
+            <a class="ig" href="https://www.instagram.com/_nik__hill/" style="--i:7;">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="fb" href="https://www.facebook.com/niki.il" style="--i:8;">
+              <i class="fa-brands fa-facebook-f" ></i>
+            </a>
+            <a class="ln" href="https://www.linkedin.com/in/nikhil-k-282301278/" style="--i:9;">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="git" href="https://github.com/Megneton555" style="--i:10;">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+       </div> 
+     </div>
+    </section>
+      
+    <section class="about-me" id="About"> 
+      <div class="about-me__block">
+        <img src="/assets/self-2.jpg" alt="" data-aos="fade-right"/>
+      </div>
+      <div class="about-me__content">
+        <h2 class="about-me__title">About
+          <div>
+            Me
+          </div>
+        </h2>
+        <p class="about-me__description" data-aos="zoom-in" data-aos-delay="400">
+          Hello there! I'm Nikhil K, a <strong>Frontend / Fullstack</strong> developer. 
+          I wake up in the morning open up my laptop and build things 
+          that live on the web all day. People who know me say I'm obsessed, that's fair, 
+          I am very driven and love learning new things.
+        </p>
+      </div>   
+    </section>        
+            
+    <section class="skills">
+      <h1 id="Skills" class="skills__title">MY 
+        <div>
+          Skills
+        </div>
+      </h1>
+      <div  class="skills__details">
+        <div class="skill" data-aos="zoom-in"> 
+          <img src="/assets/HTML5.svg" alt="html" height="85px" width="85px" />
+          <div class="version">
+            HTML5
+          </div> 
+        </div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="200"> 
+          <img src="/assets/CSS3.svg" alt="css" height="85px" width="85px" />
+          <div class="version">
+            CSS3
+          </div>
+        </div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="300"> 
+          <img src="/assets/JavaScript.svg" alt="js" height="85px" width="85px" /> 
+          <div class="version">
+            Java Script
+          </div>
+        </div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="300"> 
+          <img src="/assets/java.png" alt="java" height="85px" width="85px" />
+          <div class="version">
+            Java
+          </div> 
+        </div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="500"> 
+          <img src="/assets/GitHub.svg" alt="github" height="85px" width="85px" /> 
+          <div class="version">
+            GitHub
+          </div> 
+        </div>
+      </div>
+    </section> 
+
+    <section class="project">
+      <h1 class="project__title" id="Projects">MY
+        <div>
+          Projects
+        </div>
+      </h1>
+      <div class="project__featured">
+        <div class="project__featured-conatiner container-box1"  data-aos="fade-up-right"> 
+          <span class="project__ribben-title"></span>
+          <span class="project__title-zee5">
+            ZEE5
+          </span> 
+          <img src="/assets/ZEE5_logo.svg" alt="" /> 
+          <div class="project-content">
+            <p class="project__content-title">
+              Tools & Tech
+            </p>
+            <p class="project__content-tech">
+             HTML5, CSS3
+            </p>
+            <a class="project__link" href="https://github.com/Megneton555/ZEE5.git">
+              <button>
+                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                 link
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="project__featured-conatiner container-box2"  data-aos="fade-up-left" data-aos-delay="300">     
+          <span class="project__ribben-title"></span>
+          <span class="project__title-portfolio">
+            Portfolio
+          </span>          
+          <img src="/assets/portfolio.png" alt="" /> 
+          <div class="project-content">
+            <p class="project__content-title">
+              Tools & Tech
+            </p>
+            <p class="project__content-tech">
+              HTML5, CSS3 and Javascript
+            </p>
+            <a class="project__link" href="https://github.com/Megneton555/Portfolio.git">
+              <button>
+                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                 link
+              </button>
+           </a>
+          </div>
+        </div>
+        <div class="project__featured-conatiner container-box3"  data-aos="fade-up-right" data-aos-delay="500"> 
+          <span class="project__ribben-title"></span>
+          <p class="project__title-shopping">
+            Shopping
+          </p>
+          <img src="/assets/shopping.png" alt="" /> 
+          <div class="project-content">
+            <p class="project__content-title">
+              Tools & Tech
+            </p>
+            <p class="project__content-tech">
+              HTML5, CSS3
+            </p>
+            <a class="project__link" href="https://github.com/Megneton555/Shopping.git">
+              <button>
+                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                 link
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="project__featured-conatiner container-box4"  data-aos="fade-up-left" data-aos-delay="700"> 
+          <span class="project__ribben-title"></span>
+          <span class="project__title-hospital">
+           Hospital Mgmt
+          </span>
+          <img src="/assets/hospital.png" alt="" /> 
+          <div class="project-content">
+            <p class="project__content-title">
+              Tools & Tech
+            </p>
+            <p class="project__content-tech">
+              HTML5, Servlet API and MySQL
+            </p>
+            <a class="project__link" href="https://github.com/Megneton555/Hospital_Managment.git">
+              <button >
+                <i class="fa-brands fa-github" style="color: #ffffff;"></i> 
+                 link
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="project__featured-conatiner container-box5"  data-aos="fade-up-right" data-aos-delay="700"> 
+          <span class="project__ribben-title"></span>
+          <span class="project__title-quiziod">
+            Quiziod
+          </span>
+          <img src="/assets/Quiz.png" alt="" /> 
+          <div class="project-content">
+            <p class="project__content-title">
+              Tools & Tech
+            </p>
+            <p class="project__content-tech tech">
+              HTML5, CSS3, Js, Servlet API and MySQL
+            </p>
+            <a class="project__link" href="https://github.com/Megneton555/Quiziod.git">
+              <button>
+                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                 link
+              </button>
+            </a>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <section class="contact">
+      <h1 class="contact__title" id="Hireme">
+        Contact
+        <div>
+          me
+        </div>
+      </h1>
+      <form class="contact__form" action="" method="post" data-aos="zoom-in">
+        <div class="form__input-field">
+          <input type="text" name="name" placeholder=""  required />
+          <label>
+            Full Name
+          </label>
+        </div>
+        <div class="form__input-field">
+          <input type="email" name="email" placeholder="" required />
+          <label>
+            Email
+          </label>
+        </div>
+        <div class="form__input-field">
+          <textarea name="message" class="message" cols="30" rows="10" placeholder=""  required></textarea>
+          <label>
+            Message
+          </label>
+        </div> 
+        <button type="submit" class="submit">
+          submit
+        </button>
+      </form>
+    </section> 
+    
+    <footer>
+      <img src="/assets/logo.png" alt="" /><h3>copyright &copy; 2023 <strong>Nikhil K </strong>| All rights reserved!</h3>
+    </footer>
+   
+    <script>
+      var hamburger=document.querySelector(".header__button-mobile");
+      hamburger.onclick=function(){
+        const navbar=document.querySelector(".header__menu");
+        navbar.classList.toggle("active");
+      }
+
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("nav");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+    </script>
+
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html> 

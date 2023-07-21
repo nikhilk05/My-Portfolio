@@ -1,0 +1,390 @@
+
+.header__nav {
+    height: 6rem;
+    width: 100%;
+    letter-spacing: 1px;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 21rem;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: 5.5rem;
+}
+
+.header__logo img{
+    height: 55px;
+    width: 53px;
+}
+
+.header__nav a{
+    text-decoration: none;
+    color: var(--secondary-color);  
+}
+
+.header__nav .header__logo-overlay{
+    display: flex;
+    font-size: 32px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.header__logo-overlay div{       
+    font-size: 24px;
+    color: var(--secondary-color);
+    position: relative;
+    top: 5px;
+}
+
+
+.header__menu ul{
+    display: flex;
+    gap: 3.5rem;
+    position: relative;
+    right: 0rem;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+
+.header__menu ul li { 
+    list-style: none;
+    position: relative;
+}
+
+
+.header__menu ul li::after{
+    content:'';
+    height: 2px;
+    width: 0;
+    border-radius:7px;
+    background-color: var(--light-color);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+
+
+.header__menu ul li:hover::after{
+    width: 100%;              
+}
+
+
+.header__menu ul li a:hover{
+    color: #6302be;
+} 
+
+.header__button-mobile{
+    display: none;
+}
+
+.header__nav__btn-hire{
+    display: none;
+}
+
+
+.header__nav__button-hireme{  
+    height: 2.5rem;
+    width: 8.5rem;
+    font-size: 16px;
+    border-radius: 25px;
+    color: white;
+    background: var(--main-color);
+    border: none;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: inherit;
+    padding: 2px 6px 0 0;
+    box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+
+        
+.header__nav__button-hireme:hover{
+    transform: translateY(-.2px);
+    color: var(--secondary-color);
+    background-color: white;
+}
+
+
+.sticky{
+    height: 6rem;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 0 0px 9px 4px rgba(0, 0, 0, .25);
+}
+
+
+.sticky a{
+     color: var(--main-color);
+}
+
+
+.sticky .header__logo a{
+    color: var(--secondary-color);
+}
+
+
+.sticky .header__logo a div{
+    color: var(--main-color);
+}
+
+
+.sticky .header__logo-overlay:hover{
+    color: var(--secondary-color);
+}
+
+
+.sticky a:hover{
+     color: var(--main-color);
+}
+
+
+.sticky .header__menu ul li::after{
+    background-color: var(--main-color);
+}
+
+
+.sticky button{
+    color: white;
+    background-color: var(--main-color);
+}
+
+
+.sticky button:hover{
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+
+@media screen and (max-width: 1497px){
+
+   .header__nav{
+    gap: 15rem;
+   }
+}
+
+
+@media screen and (max-width: 1440px) {
+
+    .header__nav{
+        gap: 13rem;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+
+   .header__logo{
+        gap: 3.2rem;
+
+   }
+
+
+    .header__menu ul{
+        gap: 2.8rem;
+        font-size: 16px;
+    }
+   
+}
+
+
+ @media screen and (max-width: 768px){ 
+
+    html,body{
+      overflow-x: hidden;
+    }
+
+
+    .header__nav{
+        padding: 0 50px;
+        justify-content: space-between;
+
+    }
+
+
+    .sticky .header__menu{
+        background-color: whitesmoke;
+    }
+
+
+    .sticky .header__menu ul li a{
+        color: white;
+    }
+
+
+    .header__nav__button-hireme{    
+        display: none;
+    } 
+
+
+    .header__nav__buttons{
+        display: flex;
+    }
+
+
+    .header__nav__btn-hire{
+        color: white;
+        gap: 7px;
+        font-family: inherit;
+    }
+
+
+    .header__nav__btn-hire:hover{
+        color: white;
+        background-color: var(--secondary-color);
+    }
+
+
+    .header__button-mobile{
+        display: block;
+        color: black;
+        font-size: 19px;
+        cursor: pointer;
+    }
+
+
+    .header__menu.active{
+        height: 32rem;
+        z-index: 100;
+     }
+
+
+     .header__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 0;
+        width: 100%;
+        position: absolute;
+        top: 93px;
+        right: 0;
+        left: 0;
+        transition: .2s;
+        background-color: white;
+        box-shadow: 0 12px 15px -9px rgba(0, 0, 0, .25);
+        overflow: hidden;
+    }
+
+
+    .header__menu ul li:hover::after{
+        width: 0;
+    }
+
+
+   .header__menu ul {
+        display: flex;
+        gap: 1.8rem;
+        position: relative;
+        bottom: 1rem;
+        flex-direction: column;
+        transition: .5s;
+}
+
+
+    .header__menu ul li,.header__nav__btn-hire{  
+        height: 2.6rem;
+        width: 8.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        border-radius: 25px;
+        background: var(--main-color);
+        border: none;
+        padding-top: 2px; 
+        letter-spacing: 1px;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, .4);
+    }
+
+
+    .header__menu ul li a{
+        color: white;
+    }
+
+    
+    .header__menu ul li a:hover{
+        color: white;
+    }
+
+
+    .header__menu ul li:hover{
+        color: white;
+        background: var(--secondary-color);
+    }
+} 
+
+@media screen and (max-width: 426px){ 
+
+    .header__nav{
+        height: 5rem;
+        padding: 0 25px;
+    }
+
+
+    .header__logo img {
+        height: 45px;
+        width: 42px;
+    }
+
+
+    .header__menu ul li{
+        height: 2.5rem;
+        width: 8rem;
+        font-size: 14.8px;
+    }
+
+    .header__nav__btn-hire {
+        height: 2.5rem;
+        width: 8rem;
+        font-size: 14.5px;
+    }
+
+   .header__menu {
+        top: 80px;
+   }     
+}
+
+ 
+@media only screen and (max-width:376px) {
+  
+    .header__nav__btn-hire {
+        height: 2.5rem;
+        width: 7.5rem;
+        font-size: 14px;
+    }
+
+
+    .header__menu ul li {
+        height: 2.5rem;
+        width: 7.5rem;
+        font-size: 14.5px;
+    }
+}
+
+
+@media screen and (max-width: 321px){
+    
+    .header__logo img {
+        height: 36px;
+        width: 34px;
+    }
+
+
+    .header__button-mobile {
+        font-size: 18px;
+    }    
+} 

@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url("sections/header.css");
+@import url("sections/hero.css");
+@import url("sections/about.css");
+@import url("sections/skills.css");
+@import url("sections/projects.css");
+@import url("sections/contact.css");
+@import url("sections/footer.css");
+
+
+:root{
+    --main-color:#6e0bca;
+    --secondary-color: #000000;
+    --light-color: #8400ff;
+    --less-lighter-color: #720bd2;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* outline: 2px solid gold; */
+}  
+
+body{
+    max-width: 1340px;
+    margin: 0 auto;
+    font-family: 'Josefin Sans', sans-serif;
+    user-select: none;
+    overflow-x: hidden;
+    /* outline: 2px solid red; */
+}
