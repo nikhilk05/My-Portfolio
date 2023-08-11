@@ -4,148 +4,150 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="icon" href="/public/logo.png" />
+    <title>Portfolio Website</title>
+    <link rel="icon" href="/logo.png" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
   </head>
  <body>
-    <header>
+    <header class="container">
       <nav class="header__nav">
         <div class="header__logo">
           <a href="index.html">
-            <img src="/public/logo.png" alt=""/>
+            <img src="/logo.png" alt=""/>
           </a> 
           <div class="header__menu">
             <ul>
-              <li><a  href="#Home">Home</a></li> 
-              <li><a  href="#About">About me</a></li>
+              <li><a  href="#About">About</a></li>
               <li><a  href="#Skills">Skills</a></li>
               <li><a  href="#Projects">Projects</a></li>
-              <a href="#Hireme">
-                <button type="button" class="header__nav__btn-hire">Hire me
-                  <i class="fa-sharp fa-solid fa-circle-check"></i>
-                </button>
               </a>
             </ul>
-          </div>  
-        </div>
-        <div class="header__nav__buttons">
+          </div>
+        </div>  
+        <div class="header__nav__button">
           <div class="header__button-mobile">
             <i class="fa-solid fa-bars-staggered fa-flip-horizontal"></i>
           </div>
-          <a href="#Hireme">
-            <button type="button" class="header__nav__button-hireme">Hire me
+          <a href="#Contact">
+            <button type="button" class="header__nav__button-contact">Contact
               <i class="fa-sharp fa-solid fa-circle-check">
               </i>
             </button>
           </a>
         </div>       
       </nav>
+      <div class="mobile-nav">
+        <nav>
+          <ul class="mobile-nav__menu">
+            <li>
+              <a class="mobile-nav__link" href="#About">About</a>
+            </li>
+            <li>
+              <a class="mobile-nav__link" href="#Skills">Skills</a>
+            </li>
+            <li>
+              <a class="mobile-nav__link" href="#Projects">Projects</a>
+            </li>
+            <li>
+              <a class="mobile-nav__link" href="#Contact">Contact
+                <i class="fa-sharp fa-solid fa-circle-check"></i> 
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>  
 
-    <section class="hero" id="Home">
-      <div class="hero-block">
-        <img src="/public/self-1.jpg" alt="self" data-aos="fade-left"/>
-        <div class="hero-image__overlay">
+    <section class="hero container" id="Home">
+      <div class="hero__block">
+        <img src="/self-1.jpg" alt="self">
         </div>
-      </div>   
-      <div class="hero-content">
-        <div class="hero-content__info">
-          <h3 class="hero-content__intro">Hello,
-            <span> 
-              my name is
-            </span>
-          </h3>
-          <h1 class="hero-content__name">Nikhil
-            <div>
-              K
-            </div>
-          </h1>
-          <h4 class="hero-content__role">
-            <span>
-              I am a
-            </span>Web Developer
-          </h4> 
-          <div class="hero-content__button"> 
-            <a href="/resume/CV-Nikhilk.pdf">
-              <button  type="button" class="hero-content__button-resume">Download Resume
-                <i class="fa-sharp fa-solid fa-circle-down"></i>
-              </button>
-            </a>
-          </div>  
-          <div class="hero-content__social-media">
-            <a class="ig" href="https://www.instagram.com/_nik__hill/" style="--i:7;">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a class="fb" href="https://www.facebook.com/niki.il" style="--i:8;">
-              <i class="fa-brands fa-facebook-f" ></i>
-            </a>
-            <a class="ln" href="https://www.linkedin.com/in/nikhil-k-282301278/" style="--i:9;">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a class="git" href="https://github.com/Megneton555" style="--i:10;">
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </div>
-       </div> 
-     </div>
+      </div>  
+      <div class="hero__img">
+        <img src="/self-3.jpg" alt="me">
+      </div> 
+      <div class="hero__content">
+        <h2 class="hero__name">Hello, I'm 
+          <strong>Nikhil</strong>
+        </h2>
+        <h1 class="hero__title">
+          FRONT-END <br> WEB DEVELOPER.
+        </h1> 
+        <div class="hero__resume"> 
+          <a target="_blank" href="/resume/Resume-Nikhil k.pdf">
+            <button type="button" class="hero-content__button-resume">Resume</button>
+          </a>
+        </div>  
+        <div class="hero__social-media">
+          <a target="_blank" class="ig" href="https://www.instagram.com/_nik__hill/" style="--i:3;">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a target="_blank" class="fb" href="https://www.facebook.com/niki.il" style="--i:4;">
+            <i class="fa-brands fa-facebook-f" ></i>
+          </a>
+          <a target="_blank" class="ln" href="https://www.linkedin.com/in/nikhil-k-282301278/" style="--i:5;">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a target="_blank" class="git" href="https://github.com/nikhilk05" style="--i:6;">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
     </section>
       
-    <section class="about-me" id="About"> 
-      <div class="about-me__block">
-        <img src="/public/self-2.jpg" alt="" data-aos="fade-right"/>
+   <section class="about container section" id="About"> 
+      <div class="about__block">
+        <img src="/self-2.jpg" alt="">
       </div>
-      <div class="about-me__content">
-        <h2 class="about-me__title">About
-          <div>
-            Me
-          </div>
+      <div class="about__content">
+        <h2 class="about__title">
+          About
         </h2>
-        <p class="about-me__description" data-aos="zoom-in" data-aos-delay="400">
+        <p class="about__description">
           Hello there! I'm Nikhil K, a <strong>Frontend / Fullstack</strong> developer. 
           I wake up in the morning open up my laptop and build things 
           that live on the web all day. People who know me say I'm obsessed, that's fair, 
           I am very driven and love learning new things.
         </p>
+      </div> 
+      <div class="about__img">
+        <img src="/self-3.jpg" alt="me">
       </div>   
     </section>        
             
-    <section class="skills">
-      <h1 id="Skills" class="skills__title">MY 
-        <div>
+    <section class="skills container section" id="Skills">
+      <h1 class="skills__title">
           Skills
-        </div>
       </h1>
-      <div  class="skills__details">
+      <div  class="skills__conatiner">
         <div class="skill" data-aos="zoom-in"> 
-          <img src="/public/HTML5.svg" alt="html" height="85px" width="85px" />
+          <img src="/HTML5.svg" alt="html" />
           <div class="version">
             HTML5
           </div> 
         </div>
         <div class="skill" data-aos="zoom-in" data-aos-delay="200"> 
-          <img src="/public/CSS3.svg" alt="css" height="85px" width="85px" />
+          <img src="/CSS3.svg" alt="css" />
           <div class="version">
             CSS3
           </div>
         </div>
         <div class="skill" data-aos="zoom-in" data-aos-delay="300"> 
-          <img src="/public/JavaScript.svg" alt="js" height="85px" width="85px" /> 
+          <img src="/JavaScript.svg" alt="js"/> 
           <div class="version">
             Java Script
           </div>
         </div>
         <div class="skill" data-aos="zoom-in" data-aos-delay="300"> 
-          <img src="/public/java.png" alt="java" height="85px" width="85px" />
+          <img src="/java.png" alt="java"/>
           <div class="version">
             Java
           </div> 
         </div>
         <div class="skill" data-aos="zoom-in" data-aos-delay="500"> 
-          <img src="/public/GitHub.svg" alt="github" height="85px" width="85px" /> 
+          <img src="/GitHub.svg" alt="github"/> 
           <div class="version">
             GitHub
           </div> 
@@ -153,170 +155,118 @@
       </div>
     </section> 
 
-    <section class="project">
-      <h1 class="project__title" id="Projects">MY
-        <div>
-          Projects
+    <section class="project container section" id="Projects">
+      <h1 class="project__title">Projects</h1>
+      <div class="project__container">
+        <h3 class="project__name">Online Shopping</h3>
+        <div class="project__img-wrapper work__image1" data-aos="fade-up">
+          <img src="./img1.png" alt="shopping">
         </div>
-      </h1>
-      <div class="project__featured">
-        <div class="project__featured-conatiner container-box1"  data-aos="fade-up-right"> 
-          <span class="project__ribben-title"></span>
-          <span class="project__title-zee5">
-            ZEE5
-          </span> 
-          <img src="/public/ZEE5_logo.svg" alt="" /> 
-          <div class="project-content">
-            <p class="project__content-title">
-              Tools & Tech
-            </p>
-            <p class="project__content-tech">
-             HTML5, CSS3
-            </p>
-            <a class="project__link" href="https://github.com/Megneton555/ZEE5.git">
-              <button>
-                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-                 link
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="project__featured-conatiner container-box2"  data-aos="fade-up-left" data-aos-delay="300">     
-          <span class="project__ribben-title"></span>
-          <span class="project__title-portfolio">
-            Portfolio
-          </span>          
-          <img src="/public/portfolio.png" alt="" /> 
-          <div class="project-content">
-            <p class="project__content-title">
-              Tools & Tech
-            </p>
-            <p class="project__content-tech">
-              HTML5, CSS3 and Javascript
-            </p>
-            <a class="project__link" href="https://github.com/Megneton555/Portfolio.git">
-              <button>
-                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-                 link
-              </button>
-           </a>
-          </div>
-        </div>
-        <div class="project__featured-conatiner container-box3"  data-aos="fade-up-right" data-aos-delay="500"> 
-          <span class="project__ribben-title"></span>
-          <p class="project__title-shopping">
-            Shopping
+        <div class="project__details work__content1" data-aos="fade-down">
+          <h3 class="project__subtitle">Online Shopping</h3>
+          <p class="project__description">
+            Develop a small e-commerce website, including product catalog, checkout process, and payment methods.
           </p>
-          <img src="/public/shopping.png" alt="" /> 
-          <div class="project-content">
-            <p class="project__content-title">
-              Tools & Tech
-            </p>
-            <p class="project__content-tech">
-              HTML5, CSS3
-            </p>
-            <a class="project__link" href="https://github.com/Megneton555/Shopping.git">
-              <button>
-                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-                 link
-              </button>
-            </a>
-          </div>
+          <a target="_blank" class="project__btn" href="https://github.com/nikhilk05/Shopping">
+            <button>GitHub</button>
+          </a>
         </div>
-        <div class="project__featured-conatiner container-box4"  data-aos="fade-up-left" data-aos-delay="700"> 
-          <span class="project__ribben-title"></span>
-          <span class="project__title-hospital">
-           Hospital Mgmt
-          </span>
-          <img src="/public/hospital.png" alt="" /> 
-          <div class="project-content">
-            <p class="project__content-title">
-              Tools & Tech
-            </p>
-            <p class="project__content-tech">
-              HTML5, Servlet API and MySQL
-            </p>
-            <a class="project__link" href="https://github.com/Megneton555/Hospital_Managment.git">
-              <button >
-                <i class="fa-brands fa-github" style="color: #ffffff;"></i> 
-                 link
-              </button>
-            </a>
-          </div>
+
+        <h3 class="project__name">ZEE5 Front-End Clone</h3>
+        <div class="project__img-wrapper work__image2" data-aos="fade-up">
+          <img src="./img2.png" alt="shopping">
         </div>
-        <div class="project__featured-conatiner container-box5"  data-aos="fade-up-right" data-aos-delay="700"> 
-          <span class="project__ribben-title"></span>
-          <span class="project__title-quiziod">
-            Quiziod
-          </span>
-          <img src="/public/Quiz.png" alt="" /> 
-          <div class="project-content">
-            <p class="project__content-title">
-              Tools & Tech
-            </p>
-            <p class="project__content-tech tech">
-              HTML5, CSS3, Js, Servlet API and MySQL
-            </p>
-            <a class="project__link" href="https://github.com/Megneton555/Quiziod.git">
-              <button>
-                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-                 link
-              </button>
-            </a>
-          </div>
+        <div class="project__details work__content2" data-aos="fade-down">
+          <h3 class="project__subtitle">ZEE5 Front-End Clone</h3>
+          <p class="project__description">
+            Just like ZEE5, the logged in experience in this website is pretty similar. Has a large featured banner, 
+            and basically rows of movies or tv shows with every few rows having a featured section.
+          </p>
+          <a target="_blank" class="project__btn" href="https://github.com/nikhilk05/ZEE5">
+            <button>GitHub</button>
+          </a>
         </div>
-      </div> 
+
+        <h3 class="project__name">University Result</h3>
+        <div class="project__img-wrapper work__image3" data-aos="fade-up">
+          <img src="./img3.png" alt="shopping">
+        </div>
+        <div class="project__details work__content3" data-aos="fade-down">
+          <h3 class="project__subtitle">University Result</h3>
+          <p class="project__description">
+            Here university authorized persons  only can  add student details 
+            and also add examination marks and it will display on the website.
+          </p>
+          <a target="_blank" class="project__btn" href="https://github.com/nikhilk05/University_Result">
+            <button>GitHub</button>
+          </a>
+        </div>
+
+        <h3 class="project__name">Login and Register</h3>
+        <div class="project__img-wrapper work__image4" data-aos="fade-up">
+          <img src="./img4.png" alt="shopping">
+        </div>
+        <div class="project__details work__content4" data-aos="fade-down">
+          <h3 class="project__subtitle">Login and Register</h3>
+          <p class="project__description">
+             This is the small project on login and register with user validation.
+          </p>
+          <a target="_blank" class="project__btn" href="https://github.com/nikhilk05/login-signup-page">
+            <button>GitHub</button>
+          </a>
+        </div>
+
+        <h3 class="project__name">Quiziod</h3>
+        <div class="project__img-wrapper work__image5" data-aos="fade-up">
+          <img src="./img5.png" alt="shopping">
+        </div>
+        <div class="project__details work__content5" data-aos="fade-down">
+          <h3 class="project__subtitle">Quiziod</h3>
+          <p class="project__description">
+             Facilitates an interactive learning experience through a captivating combination of fun and education.
+             Incorporates a quiz-based system where users can earn points and redeem rewards.
+             Promotes the concept of gamified education.
+          </p>
+          <a target="_blank" class="project__btn" href="https://github.com/nikhilk05/Quiziod">
+            <button>GitHub</button>
+          </a>
+        </div>
+
+        <h3 class="project__name">Hospital Managment</h3>
+        <div class="project__img-wrapper work__image6" data-aos="fade-up">
+          <img src="./img6.png" alt="shopping">
+        </div>
+        <div class="project__details work__content6" data-aos="fade-down">
+          <h3 class="project__subtitle">Hospital Managment</h3>
+          <p class="project__description">
+             The main object of this project is to manage all the informations about doctor, staff, patient and their appointments.  
+             The project is totally built at administrative end and thus only the administrator is guaranteed the access.
+          </p>
+          <a target="_blank" class="project__btn" href="https://github.com/nikhilk05/Hospital_Managment">
+            <button>GitHub</button>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section class="contact">
-      <h1 class="contact__title" id="Hireme">
-        Contact
-        <div>
-          me
-        </div>
+    <section class="contact container section" id="Contact">
+      <h1 class="contact__title">
+        Get In Contact
       </h1>
-      <form class="contact__form" action="" method="post" data-aos="zoom-in">
-        <div class="form__input-field">
-          <input type="text" name="name" placeholder=""  required />
-          <label>
-            Full Name
-          </label>
-        </div>
-        <div class="form__input-field">
-          <input type="email" name="email" placeholder="" required />
-          <label>
-            Email
-          </label>
-        </div>
-        <div class="form__input-field">
-          <textarea name="message" class="message" cols="30" rows="10" placeholder=""  required></textarea>
-          <label>
-            Message
-          </label>
-        </div> 
-        <button type="submit" class="submit">
-          submit
-        </button>
-      </form>
+      <p class="contact__description">
+        Whether you are starting a project, have business inquiries or just
+        want to say hi, my inbox is always open so feel free to reach out and
+        I will get back to you as soon as possible.
+      </p>
+      <a class="contact__btn" href="mailto: nikhilarya303@gmail.com" target="_blank">
+        <button>React Out</button>
+      </a>
     </section> 
     
-    <footer>
-      <img src="/public/logo.png" alt="" /><h3>copyright &copy; 2023 <strong>Nikhil K </strong>| All rights reserved!</h3>
+   <footer class="container section">
+      <h3 class="footer__title">~ Nikhil K ~</h3>
     </footer>
    
-    <script>
-      var hamburger=document.querySelector(".header__button-mobile");
-      hamburger.onclick=function(){
-        const navbar=document.querySelector(".header__menu");
-        navbar.classList.toggle("active");
-      }
-
-      window.addEventListener("scroll", function(){
-        var header = document.querySelector("nav");
-        header.classList.toggle("sticky", window.scrollY > 0);
-      })
-    </script>
-
-    <script src="js/script.js" type="module"></script>
+    <script src="js/script.js" type="module"></script> 
   </body>
 </html> 
